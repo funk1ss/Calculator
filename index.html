@@ -6,22 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <span class="game-title" id="message"></span>
-    <div class="game">
-        <div class="game-item" data-ceil = "1"></div>
-        <div class="game-item" data-ceil = "2"></div>
-        <div class="game-item" data-ceil = "3"></div>
-        <div class="game-item" data-ceil = "4"></div>
-        <div class="game-item" data-ceil = "5"></div>
-        <div class="game-item" data-ceil = "6"></div>
-        <div class="game-item" data-ceil = "7"></div>
-        <div class="game-item" data-ceil = "8"></div>
-        <div class="game-item" data-ceil = "9"></div>
+    <div class="container">
+        <div class="calculator">
+            
+            <div><input type="text" class="textInput"></div>
 
-    </div>
-    <button id="reset-game">Очистить</button>
+            <div class="buttons">
+                <div class="button" onclick="addDigitToInput('Сброс')"><button>С</button></div>
+                <div class="button" onclick="addDigitToInput('%')"><button>%</button></div>
+                <div class="button" onclick="addDigitToInput('<-')"><button><-</button></div>
+                <div class="button" onclick="addDigitToInput('/')"><button>÷</button></div>
+                <div class="button" onclick="addDigitToInput(1)"><button>1</button></div>
+                <div class="button" onclick="addDigitToInput(2)"><button>2</button></div>
+                <div class="button" onclick="addDigitToInput(3)"><button>3</button></div>
+                <div class="button" onclick="addDigitToInput('*')"><button>*</button></div>
+                <div class="button" onclick="addDigitToInput(4)"><button>4</button></div>
+                <div class="button" onclick="addDigitToInput(5)"><button>5</button></div>
+                <div class="button" onclick="addDigitToInput(6)"><button>6</button></div>
+                <div class="button" onclick="addDigitToInput('-')"><button>-</button></div>
+                <div class="button" onclick="addDigitToInput(7)"><button>7</button></div>
+                <div class="button" onclick="addDigitToInput(8)"><button>8</button></div>
+                <div class="button" onclick="addDigitToInput(9)"><button>9</button></div>
+                <div class="button" onclick="addDigitToInput('+')"><button>+</button></div>
+                <div class="button" onclick="addDigitToInput('0')"><button>0</button></div>
+                <div style = "width: 75%;" class="button" onclick="addDigitToInput('=')"><button style="width: 100%;">=</button></div>
+                
+            </div>
+
+        </div>
     <script src="./main.js"></script>
 </body>
 </html>

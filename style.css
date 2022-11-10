@@ -1,61 +1,64 @@
-* {
-    box-sizing: border-box;
-
-}
-.game-title {
-    display: block;
-    margin-bottom: 30px;
-    font-size: 35px;
+body{
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    background: url(./wallpaperbetter.jpg);
+    font-family: "Roboto", "Arial", sans-serif;
     font-weight: 700;
-    text-align: center;
 }
-
-.game {
+.buttons{
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    width: 152px;
-    border: 1px solid black;
-    margin: 0 auto 50px;
+    max-width: 160px;
+    margin-top: 5px;
 }
-
-.game{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 152px;
-    border: 1px solid black;
-    margin: 0 auto 50px;
-}
-
-.game-item{
-    text-transform: uppercase;
-    position: relative;
-    width: 50px;
-    height: 50px;
-    line-height: 48px;
-    border: 1px solid black;
-    cursor: pointer;
+button{
+    width: 40px;
+    height: 40px;
+    background-color: lightblue; /* Green */
+    border: 1px solid cornsilk;
+    color: white;
     text-align: center;
-    font-size: 30px;
-    font-weight: 700;
-    transition: all linear .3s;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 15px;
+    transition: 0.9s;
 }
-.game-item.o {
-    background-color: #abfdab;
+button:hover{
+    border-radius: 10px;
+}
 
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
-.game-item.x{
-    background-color: #f99;
-
-}
-#reset-game {
-    display: block;
-    border: 1px solid black;
+.calculator{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 266px;
+    background: cornsilk;
     border-radius: 20px;
-    background-color: #fff;
-    cursor: pointer;
-    transition: all linear .3s;
-    margin: 0 auto;
-    padding: 10px 20px;
+
 }
+.textInput{
+    width: 160px;
+    height: 30px;
+    border: 0px solid cyan;
+    border-radius: 10px;
+    opacity: 0.9;
+    background-color: darkorange;
+    color: cornsilk;
+    font-size: 16px;
+    font-weight: 700
+}
+.textInput:focus{
+    outline: none;
+}
+
+
